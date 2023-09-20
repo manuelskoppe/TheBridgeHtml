@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla HTML con Contenido Personalizado</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th.gray {
+            background-color: gray;
+        }
+
+        tr.gray-row {
+            background-color: gray;
+            color: rgb(12, 12, 12); /* Cambia el color del texto para que sea legible en el fondo gris */
+        }
+
+
+        td.otro-gris{
+
+          background-color: gray;
+
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2"  class="gray">Invoice #123456789</th>
+                <th colspan="2" class="gray">January 2025</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2"><strong>Pay to:</strong><br>Acme billing co.<br>123<br>cityville,NA</td>
+                <td colspan="2">Texto debajo de January 2025</td>
+            </tr>
+            <!-- Agregar más filas según sea necesario -->
+
+            <tr class="gray-row">
+              <td >Name/Description</td>
+              <td>Qty</td>
+              <td >@</td>
+              <td>Cost</td>
+          </tr>
+
+          <tr>
+            <td>Contenido 1, Fila 3</td>
+            <td>Contenido 2, Fila 3</td>
+            <td>Contenido 3, Fila 3</td>
+            <td>Contenido 4, Fila 3</td>
+        </tr>
+
+        <tr>
+          <td>Contenido 1, Fila 3</td>
+          <td>Contenido 2, Fila 3</td>
+          <td>Contenido 3, Fila 3</td>
+          <td>Contenido 4, Fila 3</td>
+      </tr>
+
+      <tr>
+        <td colspan="2" class="otro-gris">Contenido 1, Fila 3</td>
+        <td colspan=" 2">Contenido 2, Fila 3</td>
+      
+      </tr>
+    
+    
+      <tr >
+        <td colspan="2" class="otro-gris" >Contenido 1, Fila 3</td>
+        <td>Contenido 2, Fila 3</td>
+        <td>Contenido 3, Fila 3</td>
+        
+    </tr>
+
+    <tr>
+      <td colspan="2" class="otro-gris">Contenido 1, Fila 3</td>
+      <td colspan=" 2">Contenido 2, Fila 3</td>
+    
+    </tr>
+
+
+
+        </tbody>
+    </table>
+</body>
+</html>
