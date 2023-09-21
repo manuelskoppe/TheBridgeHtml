@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla HTML con Contenido Personalizado</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th.gray {
+            background-color: gray;
+        }
+
+        tr.gray-row {
+            background-color: gray;
+            color: rgb(12, 12, 12); /* Cambia el color del texto para que sea legible en el fondo gris */
+        }
+
+        td.otro-gris {
+            background-color: gray;
+        }
+
+        td.qty-cell {
+            width: 20%; /* Ajusta el ancho de la celda Qty */
+        }
+
+        td.at-cell {
+            width: 10%; /* Ajusta el ancho de la celda @ */
+        }
+
+
+        td.subtotal-cell {
+            width: 60%; /* Ajusta el ancho de la celda subtotal */
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3"  class="gray">Invoice #123456789</th>
+                <th colspan="2" class="gray">January 2025</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2"><strong>Pay to:</strong><br>Acme billing co.<br>123<br>cityville,NA</td>
+                <td colspan="2">Texto debajo de January 2025</td>
+            </tr>
+
+            <tr class="gray-row">
+                <td class="at-cell"><strong>Name/Description</strong></td>
+                <td class="qty-cell"><strong>Qty</strong></td>
+                <td class="at-cell"><strong>@</strong></td>
+                <td class="qty-cell"><strong>Cost</strong> </td>
+            </tr>
+
+            <tr>
+                <td>Paper clips</td>
+                <td class="qty-cell">1000</td>
+                <td class="at-cell">0.01</td>
+                <td>10.00</td>
+            </tr>
+
+            <tr>
+                <td>Staples (Box)</td>
+                <td class="qty-cell">100</td>
+                <td class="at-cell">1.00</td>
+                <td>100.00</td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="otro-gris"><strong>Subtotal</strong></td>
+                <td colspan="2">110.00</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="otro-gris"><strong>Tax</strong></td>
+                <td  class="qty-cell">8%</td>
+                <td>8.80</td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="otro-gris"><strong>Grand Total</strong> </td>
+                <td colspan="2">$118.80</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+<nav> Bloque de navegacion 
+
+
+    <h1>Página 1</h1>
+    <p>Ir a <a href="gallery.html">Página 2</a></p>
+
+
+</nav>
+    
+
+
+</body>
+</html>
