@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Header {
+    background-color: rgb(196, 217, 255);
+    text-align: left;
+    padding: 10px;
+    width: 100%; /* Modificamos el ancho al 100% */
+}
+
+.Nav {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%; /* Modificamos el ancho al 100% */
+    height: 80px;
+}
+
+.MainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Modificamos el ancho al 100% */
+}
+
+.Content {
+    background-color: rgb(226, 43, 195);
+    padding: 10px;
+    width: 100%; /* Modificamos el ancho al 100% */
+    height: 400px;
+}
+
+.sidebar {
+    background-color: rgba(43, 226, 67, 0.253);
+    width: 100%; /* Modificamos el ancho al 100% */
+    height: 200px;
+}
+
+.footer {
+    background-color: rgba(226, 86, 43, 0.616);
+    padding-top: 10px;
+    width: 100%; /* Modificamos el ancho al 100% */
+    flex: 1;
+}
+
+
+
+@media (min-width: 640px) {
+    /* Estilos específicos para dispositivos tablets */
+    .Header, .Nav {
+        width: 100; /* Header y Nav ocupan 1/4 del ancho en dispositivos móviles */
+    }
+
+    .Content {
+       
+        width: 100%; /* Texto fucsia ocupa todo el ancho en dispositivos móviles */
+        
+    }
+
+  
+
+    .sidebar {
+        width: 100%; /* Ocupar todo el ancho en dispositivos móviles */
+        align-content: flex-end;
+        flex-wrap: wrap-reverse;
+       
+ 
+}
+
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+    /* Estilos específicos para pantallas grandes escritorio */
+    .Content {
+        flex: 2;
+        max-width: 100%;
+    }
+    .sidebar{
+        max-width: 20%;
+
+
+    }
+
+    .footer{
+
+        max-width: 100%;
+      height: 60px;
+
+    }
+
+    .Header{
+
+        height: 60px;
+
+    }
+
+    .Nav{
+
+        height: 50px;
+        text-align: left;
+
+    }
+
+}
+
