@@ -1,0 +1,72 @@
+.hero-container{
+    background-image: url(descarga.jpg); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Para cubrir todo el contenedor con la imagen */
+    background-position: center; /* Para centrar la imagen en el contenedor */
+    height: 100vh; /* Altura del contenedor, en este caso, ocupará el 100% de la altura del viewport */
+}
+
+.elemento{
+
+color: white;
+align-items: center;
+justify-content: center;
+padding-left: 200px;
+padding-top: 20px;
+font-size: 56px; /* Tamaño del texto */
+    font-weight: bold; /* Hacer el texto negrita */
+
+
+}
+
+.circulo {
+    display: inline-block;
+    width: 20px; /* Tamaño del círculo */
+    height: 30px; /* Tamaño del círculo */
+    border-radius: 50%; /* Para hacer el círculo */
+    background-color: red; /* Color del círculo */
+    margin-right: 10px; /* Espacio entre el círculo y el texto */
+}
+
+.segundo-titulo{
+
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding-left: 200px;
+    padding-top: 20px;
+    font-size: 36px; /* Tamaño del texto */
+        font-weight:lighter;
+
+
+}
+
+
+.la-turra{
+
+    color: white; 
+    max-width: 400px; 
+    align-items: center;
+    justify-content: center;
+    padding-left: 200px;
+    padding-top: 20px;
+    
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #FF0000; /* Color de fondo rojo */
+    border: 2px solid #FF0000; /* Borde rojo */
+    color: white; /* Color del texto */
+}
+
+.button:hover {
+    background-color: transparent; /* Cambia el fondo al pasar el mouse */
+    color: #FF0000; /* Cambia el texto al pasar el mouse */
+}
